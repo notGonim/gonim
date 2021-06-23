@@ -57,7 +57,8 @@
         --smaller-font-size: .813rem;
     }
 }
-/* -----  adding the global styles  */
+
+/* -----  Adding the global styles  ------  */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -88,19 +89,38 @@ img{
     height: auto;
 }
 
-
+/* -----  Reusable CSS classes  ------  */
+.section{
+    padding: 2rem 0 4rem;
+}
+.section--title{
+    font-size: var(--h1-font-size);
+}
+.section--subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+.section--title,
+.section--subtitle{
+    text-align: center;
+}
+/* -----  Main Layout  ------  */
+.container{
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
 
 /*========== Variables Dark theme ==========*/
 
 
 /*========== Button Dark/Light ==========*/
 
-
-
-/*==================== REUSABLE CSS CLASSES ====================*/
-
-
-/*==================== LAYOUT ====================*/
 
 
 /*==================== NAV ====================*/
