@@ -1,15 +1,33 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
+
+console.log('test')
+
+const navMenu = document.getElementById('nav-menu')
+const navToggle = document.getElementById('nav-toggle')
+const navClose = document.getElementById('nav-close')
+const navLink = document.querySelectorAll('.nav--link')
 
 
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
 
+//check if user click toggle to show menu
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show--menu')
+    })
+}
+//check if user want to close menu
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show--menu')
+    })
+}
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
+// remove menu in mobile
+function linkAction() {
+    //clicked on nav-link remove show--menu
+    navMenu.classList.remove('show--menu')
+}
+navLink.forEach(link => link.addEventListener('click', linkAction))
 
-
-/*==================== REMOVE MENU MOBILE ====================*/
 
 
 /*==================== ACCORDION SKILLS ====================*/
@@ -30,10 +48,10 @@
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+/*==================== CHANGE BACKGROUND HEADER ====================*/
 
 
-/*==================== SHOW SCROLL UP ====================*/ 
+/*==================== SHOW SCROLL UP ====================*/
 
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== DARK LIGHT THEME ====================*/

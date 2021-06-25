@@ -149,8 +149,8 @@ img{
 @media screen and (max-width :767px){
     .nav--menu{
         position: fixed;
-        bottom: 0;
-        left: -100%;
+        bottom: -100%;
+        left: 0;
         width: 100%;
         background-color: var(--body-color);
         transition: 0.3s;
@@ -188,6 +188,10 @@ img{
     color: var(--first-color-alt);
 }
 
+/* -----  Nav - show menu  ------  */
+.show--menu{
+    bottom: 0;
+}
 /*========== Variables Dark theme ==========*/
 
 
@@ -197,8 +201,6 @@ img{
 
 /*==================== NAV ====================*/
 
-
-/* show menu */
 
 
 /* Active link */
