@@ -390,6 +390,19 @@ border-radius: .25rem;
     row-gap: 1.5rem;
     padding-left: 2.7rem;
 }
+.skills--close 
+.skills--list{
+    height: 0;
+    overflow: hidden;
+}
+.skills--open 
+.skills--list{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+.skills--open .skills--arrow{
+    transform: rotate(-180deg);
+}
 /*========== Variables Dark theme ==========*/
 
 
